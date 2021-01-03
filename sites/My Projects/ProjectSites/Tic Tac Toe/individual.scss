@@ -1,0 +1,32 @@
+@import "./../../../../css/reusables.scss";
+
+body:after {
+    content: url("./images/tictactoe-hero.png"), url("./images/tictactoe-hero-darkmode.png"), url("./images/tictactoeshowcase.png"), url("./images/tictactoetie.png");
+    display: none;
+}
+
+.hero-section {
+    @include backgroundImage(url("./images/tictactoe-hero.png"), center, center, static, cover);
+}
+.hero-section.dark-mode {
+    @include backgroundImage(url("./images/tictactoe-hero-darkmode.png"), center, center, static, cover);
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    img {
+        flex: 1;
+        margin-right: 10vh;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .images {
+        display: block;
+        img {
+            width: 75%;
+            margin: 10px 12.5%;
+        }
+    }
+}

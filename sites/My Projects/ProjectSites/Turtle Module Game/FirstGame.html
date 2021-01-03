@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First "Game"</title>
+    <link rel="icon" href="./../../../../images/TT.jpg">
+
+    <!-- CSS -->
+    <link href="./../../../../css/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="./individual.css" rel="stylesheet" type="text/css">
+    <link href="./../../../../css/animations.css" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="./../../../../js/loader.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./../../../../js/hero-image.js" type="text/javascript"></script>
+    <script src="./../../../../js/scroll-out-setup.js" type="text/javascript"></script>
+    <script src="./../../../../js/image-zoom.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.5
+        });
+        registerSvgPath("./../../../svgs/");
+      });
+    </script>
+    <script src="./../../../../js/dark-mode.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header class="main-header">
+      <h2 class="logo" data-no-scroll><a href="./../../../../index.html">TT</a></h2>
+      <nav>
+        <ul class="nav-links" data-no-scroll>
+          <li class="nav-link" data-no-scroll><a href="./../../../../index.html">Home</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../About/About.html">About</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../Blog/Blog.html">Blog</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../My Projects/MyProjects.html">My Projects</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../notAvailable.html">Tutorials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <article class="hero-article">
+            <h1>Dungeon Raiders</h1>
+        </article>
+      </section>
+      <section class="introduction">
+        <article>
+          <p>
+            This was the first program that I made. The script consists of a few modules (turtle, os, time, random) and 981 lines of code. It was my first attempt at making a video game, and it wasn't really a full game...
+            This game was created some time ago so there are also some immature jokes..
+          </p>
+          <p>
+            Initially, when I was just getting started with my programming journey, I wanted to make video games. Instead of using a programming language more fitting like C# and Unity, I decided to use Python as it was
+            much easier. This game was heavily inspired by Undertale and one aspect is from Overwatch. The reason I used the turtle module instead of pygame was because I couldn't install any libraries via pip. (I didn't include pip in my path...)
+          </p>
+          <p>
+            The process of making this program was very very tiring. The main reason was because I had to draw out almost all parts of the UI myself.
+          </p>
+        </article>
+      </section>
+      <section class="description">
+        <article>
+          <h1>Features</h1>
+          <p>
+            The game wasn't fully finished when I decided to move on to other projects and C# and Unity. As of now, there is only a tutorial that teaches you the basic concepts of this game.
+          </p>
+          <p>
+            The initial idea was:
+          </p>
+          <ul>
+            <li>There is a "grid" in which you could move</li>
+            <li>You can move around with wasd</li>
+            <li>There are enemies you can approach and fight</li>
+            <li>
+              fighting works like this:
+              <ul>
+                <li>Attack: three targets appear which you will have to click on to deal damage (time limit is variable)</li>
+                <li>Heal: use items from your inventory to heal yourself of boost damage</li>
+                <li>Ultimate: use a heavy attack that deals more damage</li>
+                <li>Defend: dodge incoming objects to avoid damage</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            When you start the game, you are greeted with a blank menu that I put together towards the end of the project when I lost motivation. One would then use w and s and the enter key
+            to choose between the tutorial and the main game. Sadly, I never made the actual game.
+          </p>
+          <p>
+            In the tutorial, a text towards the top will walk you through the game features. You could click to advance and you had to fight against a "goblin".
+          </p>
+
+          <div class="image-gallery">
+            <figure>
+              <img class="gallery-item zoom-image" src="./images/DungeonRImg1.png" alt="image of DungeonRaiders with dumb sprite">
+              <figcaption>Image of DungeonRaiders with dumb sprite</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+      <section class="explanation">
+        <article>
+          <h1>How this program does its thing</h1>
+          <p>
+            I made this program a while ago. The code was way too messy and deciphering it would take some time. Maybe one day I will go into detail about how everything
+            works in this program, but for now, I can only explain things briefly.
+          </p>
+          <p>
+            The GUI ist made out of turtles with images and lots of things drawn by a pen turtle and the
+            movement is handled by built-in functions of the turtle module. This program is made of a lot of functions which handle different parts of the
+            game: attacking, etc.
+            The tutorial is made with a variable that tracks at which stage you are in the tutorial. By clicking, you update the variable and a new text is shown.
+          </p>
+        </article>
+      </section>
+      <section class="conclusion">
+        <article>
+          <h1>Conclusion</h1>
+          <p>
+            All in all, this program is what a programmer who has just started would typically write. The code was very messy and whitespace was very inconsistent and all over the place.
+          </p>
+          <p>
+            In hindsight, I should have used more functions and classes to make my code more reusable. That way, making this little game would have taken much less time and my code would have been much 
+            more efficient.
+          </p>
+          <p>
+            After this project, I moved on to other ways of making games, such as coding with Unity, which made a lot of processes in making a game more easy and simple.
+          </p>
+          <p>
+            Sadly, I think this is my only game that I have made myself. After moving on to Unity, I slowly lost interest in gamedevelopment. The reason why is still not really clear.
+            I bought a Udemy course to learn the basics of 2D and 3D gamedevelopment but for some reason I just didn't wan't to continue after a while.
+          </p>
+          <p>
+            I think one of the reasons was that there was too little programming and too much messing around in the Unity game engine and gamedesign.
+            I still rememeber thinking to myself that this process of learning was way to stressful because all I was doing was watching tutorials and not actually making a game I wanted to make.
+          </p>
+          <p>
+            Thinking about it now, I shouldn't have binged that many videos without making my own game. What I should have done is create a small little game myself so that I didn't lose interest in gamedevelopment.
+            As of now (06.05.2020) I will move on to other parts of programming. Maybe next year or so I will come back to this aspect of programming and give it another shot.
+          </p>
+        </article>
+      </section>
+      <section class="download">
+        <article>
+          <h1>Downloads</h1>
+          <p>
+            Here you can download the game and play it if you want. 
+            Again, this game was created some time ago and while making this game I wasn't very mature, so there are some stupid jokes in this game 
+            that might be seen as cringy by some.
+          </p>
+          <div data-scroll><div class="download-svg"></div><a href="./files/user.zip" download>user</a></div>
+          <br>
+          <div data-scroll><div class="download-svg"></div><a href="./files/dev.zip" download>development</a></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Website by Rui Zhang</p>
+      <div class="social-media">
+        <div class="Youtube" onclick="window.location.href = 'https://www.youtube.com/channel/UCrY2gIg_7vrlKUp9Cim6LBA'"></div>
+        <div class="Instagram" onclick="window.location.href = 'https://www.instagram.com/totallyinformatik/'"></div>
+        <div class="Twitter" onclick="window.location.href = 'https://twitter.com/totallyInforma1'"></div>
+        <div class="Tumblr" onclick="window.location.href = 'https://www.tumblr.com/blog/totallyinformatik'"></div>
+      </div>
+    </footer>
+  </body>
+
+  <div class="dark-mode-wrapper">
+    <div class="dark-mode-button">
+    </div>
+  </div>
+  
+  <div class="loader-screen">
+    <div class="loader">
+    </div>
+    <div class="loader2">
+    </div>
+  </div>
+</html>

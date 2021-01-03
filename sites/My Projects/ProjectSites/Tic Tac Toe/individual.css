@@ -1,0 +1,45 @@
+body:after {
+  content: url("./images/tictactoe-hero.png"), url("./images/tictactoe-hero-darkmode.png"), url("./images/tictactoeshowcase.png"), url("./images/tictactoetie.png");
+  display: none;
+}
+
+.hero-section {
+  background-image: url("./images/tictactoe-hero.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.hero-section.dark-mode {
+  background-image: url("./images/tictactoe-hero-darkmode.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.images img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 1150px) {
+  .images {
+    display: block;
+  }
+  .images img {
+    width: 75%;
+    margin: 10px 12.5%;
+  }
+}
+/*# sourceMappingURL=individual.css.map */

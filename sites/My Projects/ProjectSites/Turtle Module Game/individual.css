@@ -1,0 +1,28 @@
+body:after {
+  content: url("./images/DungeonRaiders.png"), url("./images/DungeonRaidersDarkmode.png");
+  display: none;
+}
+
+.hero-section.dark-mode {
+  background-image: url("./images/DungeonRaiders.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.hero-section {
+  background-image: url("./images/DungeonRaidersDarkmode.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.image-gallery {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.image-gallery .gallery-item {
+  width: 100%;
+}
+/*# sourceMappingURL=individual.css.map */

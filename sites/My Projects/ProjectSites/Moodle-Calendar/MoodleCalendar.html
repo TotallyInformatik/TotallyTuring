@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moodle Calendar</title>
+    <link rel="icon" href="./../../../../images/TT.jpg">
+
+    <!-- CSS -->
+    <link href="./../../../../css/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="./individual.css" rel="stylesheet" type="text/css">
+    <link href="./../../../../css/animations.css" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="./../../../../js/loader.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./../../../../js/hero-image.js" type="text/javascript"></script>
+    <script src="./../../../../js/scroll-out-setup.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.5
+        });
+        registerSvgPath("./../../../svgs/");
+      });
+    </script>
+    <script src="./../../../../js/dark-mode.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header class="main-header">
+      <h2 class="logo" data-no-scroll><a href="./../../../../index.html">TT</a></h2>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link" data-no-scroll><a href="./../../../../index.html">Home</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../About/About.html">About</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../Blog/Blog.html">Blog</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../My Projects/MyProjects.html">My Projects</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../notAvailable.html">Tutorials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <article class="hero-article">
+          <h1>Moodle-Calendar</h1>
+        </article>
+        <div class="scroll-indicator">
+        </div>
+      </section>
+      <section class="youtube-video-section">
+        <article>
+          <div class="video-wrapper">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/hjIFVZnMSD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </article>
+      </section>
+      <section class="introduction">
+        <article>
+          <p>
+            This Program is made in python with various modules such as tkinter, datetime, BeatifulSoup4 etc. It is a calendar where you can plan your day and longterm tasks and 
+            see the tasks from Moodle, but unlike the calendar that the known Website Moodle which serves for online education already provides, this calendar only 
+            shows the tasks that are relevant (i.e. no tasks will be displayed that you have already submitted, no tasks that were due some time ago, etc.), that way, 
+            you can plan your day more easily. 
+          </p>
+          <p>
+            The reason why I programmed this was because I had trouble planning my day. A week ago, before spring break started in Germany, we were receiving tasks from the Moodle Website everyday
+            and not only was I generally just demotivated to do them because I wasn't in school, I had to plan when and which tasks to do too! And, besides, the Moodle website is structured in a way which doesn't really give you a good overview of the tasks you actually have to do.
+            So that's why I decided to program this calendar.
+          </p>
+          <p>
+            I had a lot of fun doing this project, and you guys can download this program too if you want! The program is in German though, and the rules it runs by are pretty specific so it probably won't work on an English Moodle Website. But if you can find a way to get it to work anyway or if you're German, you can download it below.
+            If you happen to be a person who can't speak German but can still find purpose in this program because for example you want to plan your day with this tool and ignore the Moodle part (which now works in version 1.1) and you want an English version, 
+            then you can contact me via e-mail on the <a href="../../../About/About.html">"About"</a> page.
+          </p>
+        </article>
+      </section>
+      <section class="description">
+        <article>
+          <h1>Features and Versions</h1>
+          <p>
+            Hover over / click on the images!
+          </p>
+          <div class="versions">
+            <figure class="version1_0 version-item">
+              <div class="hover-svg">
+              </div>
+              <h2>Version 1.0</h2>
+              <img src="./images/Kalender1_0.png" alt="image of version 1.0">
+              <figcaption>
+                <div class="text">
+                  <p data-no-scroll>
+                    Version 1.0 is the least userfriendly version. The GUI consisted of multiple windows and the features were limited.
+                    In this version, you first HAD to log in width your Moodle account information in a login window. Then, you're greeted by a calendar which consisted of tkinter button widgets in another window. Every day that had a task would show up as 
+                    red (except the day you are currently on, which would end up grey).
+                  </p>
+                  <p data-no-scroll>
+                    If you clicked on a button, you would see the
+                    tasks you have added and the Moodle tasks which have been read from the Moodle Website, in a seperate window. In that window, you could add your own tasks by clicking on a "+" sign. Another window would appear where you could configure your task by entering a time and the title of that task. 
+                    If you click on "erstellen", which is the German equivalent to "create" or "make", the program would add the task to that day.
+                  </p>
+                  <p data-no-scroll>
+                    At the bottom of the window, you could see the current month and a few buttons. You can click on the arrows pointing left or right to see the previous or upcoming months and tasks.
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="version1_1 version-item">
+              <h2>Version 1.1</h2>
+              <img src="./images/Kalender1_1.png" alt="image of version 1.1">
+              <figcaption>
+                <div class="text">
+                  <p data-no-scroll>
+                    Version 1.1 has some more features: The program now has a better GUI with less windows and it is more userfriendly. You can now add long-term plans and goals, adding a task can't go wrong either (in version 1.0 you could, by writing for example jj:jj as a time), 
+                    because the program now checks the time with regular expressions. You don't HAVE to log into your moodle account anymore, and there are now scrollbars to prevent long windows if you have a day that
+                    has particularly many tasks.
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="version1_2 version-item">
+              <h2>Version 1.2</h2>
+              <img src="./images/Kalender1_1.png" alt="image of version 1.2">
+              <figcaption>
+                <div class="text">
+                  <p data-no-scroll>
+                    Version 1.2 still looks the same, but some bugs were fixed.
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+      <section class="explanation">
+        <article>
+          <h1>How this program does its thing</h1>
+          <br>
+          <h2>Displaying calendar and webscraping</h2>
+          <div class="flex">
+            <div class="text">
+              <p>
+                When you start the python script, two windows are created with the tkinter module. One of them asks you for your Moodle Account information and the other window will display content once you log in.
+                If you're in version 1.1, you can decide whether or not you want to log into your moodle account to see the moodle tasks. If you choose to log in, the script will take the username and password that you've hopefully entered (else the program will get angry at you)
+                and will use the BeatifulSoup Module to get to the Moodle login website and post your information. 
+              </p>
+              <br>
+              <p>
+                After that, the program has access to the actual content of the Moodle Website, so it goes to a specific site that displays all of your
+                personal relevant tasks. The script checks each individual task and whether or not you have already submitted that task by getting the hyperlink at the bottom of that task and heading to that link. The site it ends up at is the place where you
+                as a student can submit your task. If you've submitted a task, the website has a sort of indicator that now has a green color and now displays the message "you have submitted this task" in german. 
+              </p>
+            </div>
+            <img src="./images/moodleSubmittedATask1.png" alt="a picture that shows a task that has been submitted">
+          </div>
+          <p>
+            This is also how the script finds out whether or not you have done the tasks and why the this program won't work on an english Moodle Website.
+            If you haven't submitted anything yet, the program will put the information of this task (date, time, title, hyperlink to the page where you can submit your task) into a dictionary where the keys are the datetimes, and the rest is the value. This way, when displaying the calendar which consists of
+            multiple buttons and that is made with the help of the datetime and the calendar module, it can check the buttons date and get the tasks for that day by just using the dict.get(key, default) statement. The information and tasks are passed into the buttons command function, which is triggered everytime you click on the button. So this way, when you
+            click on the button, the tasks that should appear will also appear. Each task that is displayed for a specific day consists of title, button to redirect you to the site where you can submit your task and the delete button. The redirect button works by using the webbrowser module, and the delete button
+            deletes the correct tasks by using the destroy() function in tkinter and by storing the information of that deleted task into a .txt file, which is read everytime you open the program and used to filter the dictionary of tasks. 
+            So the next time you open this program, you won't see the things you have deleted.
+          </p>
+          <h2>Adding your own tasks</h2>
+          <p>
+            In this program, you can also add your own tasks, and this is done by using another file. If you click on a date in the calendar, there are two "frames". One of which shows you all Moodle tasks and the other of which shows you the tasks you have added.
+            A "+" button can be seen too. And if you click on it, another window appears where you can enter information about the task (time, title, deadline) and once you've entered everything, you can click on the button on the bottom which adds the task to that day.
+            This time, each task consists of the title, the time and the button to delete that task. Whenever you add a task, the information is put into another .txt file that is also read the next time you open the program and used to make a list that stores all tasks added by the individual user. That list is then used to tell the program on which day to display which
+            tasks that the user has added. That way, tasks you have added don't just disappear.
+          </p>
+          <h2>Adding longterm tasks</h2>
+          <p>
+            One last important aspect of this program is the "add longterm task" feature. This feature only exists in version 1.1 and works very similarly to the "add personal task" feature. You can click on a button on the calendar which shows you all of your longterm tasks (displayed at the same place where the tasks for a specific day would usually get displayed).
+            You can click on a button which adds a longterm task. That task consists of title, date and delete button. Yet another file is used to store all of your longterm tasks. This file basically works the same way as the file that is used to store all of your personally configured tasks, except there is one difference: This time, the programm stores the date instead of the time, deadlline and date.
+            This is also why I made a separate file for this feature.
+          </p>
+        </article>
+      </section>
+      <section class="conclusion">
+        <article>
+          <h1>Conclusion</h1>
+          <p>
+            So, making this project was really fun and I learned a lot of things too. But I also noticed problems while programming. For example I noticed that I was almost always way too rushed to
+            get this program done. I stopped thinking about making the structure of this program as good as possible and writing readable code. I realized often, that I had to write code which was practically the same
+            multiple times. I believe that if I had planned this project better and made drawings and sketches of the program structure and thought about the next step more often, the code wouldn't have ended up being
+            1000 lines long (btw. it was all in ONE FILE, which is probably not that good of an idea either). In hindsight, I should have used more classes in order to prevent useless repetition and made the structure of dependencies more uniform. But for now, I don't think I will have enough motivation to sit
+            in front of my computer for another two weeks to rewrite everything just to make the code nicer. Maybe I will return one day and do that.
+          </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h1>Downloads</h1>
+          <p>
+            There are three Versions you can download. If you want to download already, you can do so here:
+          </p>
+          <br>
+          <div class="download">
+            <div class="user">
+              <div data-scroll><div class="download-svg"></div><a href="./files/Moodle_Kalender_Planer_ver1_0.zip" download>version 1.0</a></div>
+              <br>
+              <div data-scroll><div class="download-svg"></div><a href="./files/Moodle_Kalender_Planer_ver1_1.zip" download>version 1.1</a></div>
+              <br>
+              <div data-scroll><div class="download-svg"></div><a href="./files/Moodle_Kalender_Planer_ver1_2.zip" download>version 1.2 (recommended)</a></div>
+            </div>
+            <div class="development">
+              <div data-scroll><div class="download-svg"></div><a href="./files/DEV_Moodle_ver1_2.zip" download>development version 1.2</a></div>
+            </div>
+          </div>
+          <br>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2019 Rui Zhang</p>
+      <div class="social-media">
+        <div class="Youtube" onclick="window.location.href = 'https://www.youtube.com/channel/UCrY2gIg_7vrlKUp9Cim6LBA'"></div>
+        <div class="Instagram" onclick="window.location.href = 'https://www.instagram.com/totallyinformatik/'"></div>
+        <div class="Twitter" onclick="window.location.href = 'https://twitter.com/totallyInforma1'"></div>
+        <div class="Tumblr" onclick="window.location.href = 'https://www.tumblr.com/blog/totallyinformatik'"></div>
+      </div>
+    </footer>
+  </body>
+
+  <div class="dark-mode-wrapper">
+    <div class="dark-mode-button">
+    </div>
+  </div>
+
+  <div class="loader-screen">
+    <div class="loader">
+    </div>
+    <div class="loader2">
+    </div>
+  </div>
+</html>

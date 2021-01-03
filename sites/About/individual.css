@@ -1,0 +1,174 @@
+body:after {
+  content: url("./../../lightmode-heros/mountains9.jpg"), url("./../../images/books.jpg"), url("./../../images/darkmode-heros/mountains9.jpg"), url("./../../images/contact.jpg");
+  display: none;
+}
+
+.hero-section {
+  background-image: url("./../../images/lightmode-heros/mountains9.jpg");
+  background-position: center 60%;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.hero-section.dark-mode {
+  background-image: url("./../../images/darkmode-heros/mountains9.jpg");
+  background-position: center 60%;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.section1 article .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section1 article .flex img {
+  display: block;
+  margin-left: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+}
+
+.section1 article .flex .text {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 1500px) {
+  .section1 article .flex {
+    display: block;
+    margin-top: 0;
+  }
+  .section1 article .flex img {
+    margin-left: 0;
+    width: 100%;
+  }
+  .section1 article .flex .text {
+    width: 100%;
+  }
+}
+
+.section2-hero {
+  z-index: 0;
+  height: 60vh;
+  min-height: 300px;
+  width: 100%;
+  margin: 10vh 0;
+  padding: 0;
+}
+
+.section2-hero article {
+  background-image: url("./../../images/contact.jpg");
+  background-position: center 60%;
+  background-size: cover;
+  background-attachment: static;
+  display: inline-table;
+  height: 100%;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.section2-hero article h1 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.section2 {
+  z-index: 1;
+}
+
+.section2 p {
+  text-align: justify;
+  margin: 0 0 30px 0;
+}
+
+.section2 .kontakt-form {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "name message message message" "email message message message" "nummer message message message" "submit message message message";
+  height: 200px;
+}
+
+.section2 .kontakt-form input, .section2 .kontakt-form textarea {
+  border: 5px solid;
+  border-color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+}
+
+.section2 .kontakt-form input.dark-mode, .section2 .kontakt-form textarea.dark-mode {
+  border-color: #323232;
+  background-color: #323232;
+}
+
+.section2 .kontakt-form .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+.section2 .kontakt-form .email {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.section2 .kontakt-form .nummer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nummer;
+}
+
+.section2 .kontakt-form .submit {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: submit;
+  width: 100%;
+}
+
+.section2 .kontakt-form .submit input {
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+
+.section2 .kontakt-form .message {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: message;
+}
+
+.section2 .kontakt-form .message textarea {
+  width: 90%;
+  height: 200px;
+  resize: none;
+}
+
+.section2 .feedback-message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .section2 .kontakt-form {
+    display: block;
+    height: auto;
+  }
+  .section2 .kontakt-form .name, .section2 .kontakt-form .email, .section2 .kontakt-form .nummer, .section2 .kontakt-form .message, .section2 .kontakt-form .submit {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=individual.css.map */

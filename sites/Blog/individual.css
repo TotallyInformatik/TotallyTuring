@@ -1,0 +1,89 @@
+body:after {
+  content: url("./../../images/lightmode-heros/hero-image.jpg"), url("./../../images/April.jpg"), url("./../../images/darkmode-heros/hero-image.jpg");
+  display: none;
+}
+
+.hero-section {
+  background-image: url("./../../images/lightmode-heros/hero-image.jpg");
+  background-position: center 100%;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.hero-section.dark-mode {
+  background-image: url("./../../images/darkmode-heros/hero-image.jpg");
+  background-position: center 100%;
+  background-size: cover;
+  background-attachment: static;
+}
+
+@-webkit-keyframes detailsAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes detailsAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.introduction {
+  text-align: justify;
+}
+
+.introduction .details-element {
+  cursor: pointer;
+}
+
+.introduction .details-element .summary-element h2:hover {
+  color: grey;
+}
+
+.introduction .details-element .summary-element h2, .introduction .details-element .summary-element .chevron-right {
+  display: inline-block;
+}
+
+.introduction .details-element .details {
+  overflow: hidden;
+}
+
+.post-hero {
+  width: 100vw;
+  height: 60vh;
+  min-height: 300px;
+  color: black;
+  padding: 0;
+  margin: 10vh 0;
+}
+
+.post-hero article {
+  height: 100%;
+  width: 75%;
+  margin-left: 12.5%;
+  text-align: center;
+  background-image: url("./../../images/April.jpg");
+  background-position: 50% 35%;
+  background-size: cover;
+  background-attachment: static;
+  display: inline-table;
+}
+
+.post-hero article .text {
+  display: table-cell;
+  vertical-align: middle;
+  color: black;
+}
+
+.Janurary, .April {
+  z-index: 1;
+  text-align: justify;
+}
+/*# sourceMappingURL=individual.css.map */

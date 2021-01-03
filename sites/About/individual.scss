@@ -1,0 +1,128 @@
+@import './../../css/reusables.scss';
+
+body:after {
+  content: url("./../../lightmode-heros/mountains9.jpg"), url("./../../images/books.jpg"), url("./../../images/darkmode-heros/mountains9.jpg"), url("./../../images/contact.jpg");
+  display: none;
+}
+
+.hero-section {
+  @include backgroundImage(url("./../../images/lightmode-heros/mountains9.jpg"), center, 60%, static, cover);
+}
+.hero-section.dark-mode {
+  @include backgroundImage(url("./../../images/darkmode-heros/mountains9.jpg"), center, 60%, static, cover);
+}
+
+.section1 article .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    display: block;
+    margin-left: 5%;
+    flex: 1;
+    width: 50%;
+  }
+  .text {
+    width: 50%;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .section1 article .flex {
+    display: block;
+    margin-top: 0;
+    img {
+      margin-left: 0;
+      width: 100%;
+    }
+    .text {
+      width: 100%;
+    }
+  }
+}
+
+.section2-hero {
+  z-index: 0;
+  height: 60vh;
+  min-height: 300px;
+  width: 100%;
+  margin: 10vh 0;
+  padding: 0;
+  article {
+    @include backgroundImage(url("./../../images/contact.jpg"), center, 60%, static, cover);
+    display: inline-table;
+    height: 100%;
+    width: 75%;
+    margin-left: 12.5%;
+    h1 {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+.section2 {
+  z-index: 1;
+  p {
+    text-align: justify;
+    margin: 0 0 30px 0;
+  }
+  .kontakt-form {
+    display: grid;
+    grid-template-areas: 
+      "name message message message"
+      "email message message message"
+      "nummer message message message"
+      "submit message message message"
+    ;
+    height: 200px;
+    input, textarea {
+      border: 5px solid;
+      border-color:  whitesmoke;
+      font-family: "Raleway", sans-serif;
+      background-color: whitesmoke;
+    }
+    input.dark-mode, textarea.dark-mode {
+      border-color: rgb(50, 50, 50);
+      background-color: rgb(50, 50, 50);
+    }
+    .name {
+      grid-area: name;
+    }
+    .email {
+      grid-area: email;
+    }
+    .nummer {
+      grid-area: nummer;
+    }
+    .submit {
+      grid-area: submit;
+      width: 100%;
+      input {
+        font-family: "Raleway", sans-serif;
+        cursor: pointer;
+      }
+    }
+    .message {
+      grid-area: message;
+      textarea {
+        width: 90%;
+        height: 200px;
+        resize: none;
+      }
+    }
+  }
+  .feedback-message {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section2 .kontakt-form {
+    display: block;
+    height: auto;
+    .name, .email, .nummer, .message, .submit {
+      margin-top: 10px;
+    }
+  }
+}

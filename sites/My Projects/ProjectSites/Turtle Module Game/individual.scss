@@ -1,0 +1,22 @@
+@import "./../../../../css/reusables.scss";
+
+body:after {
+    content: url("./images/DungeonRaiders.png"), url("./images/DungeonRaidersDarkmode.png");
+    display: none;
+}
+
+.hero-section.dark-mode {
+    @include backgroundImage(url("./images/DungeonRaiders.png"), center, center, static, cover);
+}
+.hero-section {
+    @include backgroundImage(url("./images/DungeonRaidersDarkmode.png"), center, center, static, cover);
+}
+
+
+.image-gallery {
+    width: 100%;
+    margin-top: 100px;
+    .gallery-item {
+        width: 100%;
+    }
+}

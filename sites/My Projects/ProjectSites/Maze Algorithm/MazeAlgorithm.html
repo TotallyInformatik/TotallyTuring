@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe AI</title>
+    <link rel="icon" href="./../../../../images/TT.jpg">
+
+    <!-- CSS -->
+    <link href="./../../../../css/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="./individual.css" rel="stylesheet" type="text/css">
+    <link href="./../../../../css/animations.css" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="./../../../../js/loader.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./../../../../js/hero-image.js" type="text/javascript"></script>
+    <script src="./../../../../js/scroll-out-setup.js" type="text/javascript"></script>
+    <script src="./../../../../js/image-zoom.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.5
+        });
+        registerSvgPath("./../../../svgs/");
+      });
+    </script>
+    <script src="./../../../../js/dark-mode.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header class="main-header">
+      <h2 class="logo" data-no-scroll><a href="./../../../../index.html">TT</a></h2>
+      <nav>
+        <ul class="nav-links" data-no-scroll>
+          <li class="nav-link" data-no-scroll><a href="./../../../../index.html">Home</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../About/About.html">About</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../Blog/Blog.html">Blog</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../My Projects/MyProjects.html">My Projects</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../../../notAvailable.html">Tutorials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <article class="hero-article">
+            <h1>Maze Algorithm</h1>
+        </article>
+      </section>
+      <section class="introduction">
+        <article>
+            <p>
+              This maze algorithm is very simple and finds a solution to a maze. This program took me about 30min - 1hr to make and it uses only one module: turtle, to visualize the path.
+              The program uses a recursive algorithm to solve the given maze. It has a few limitations though. The program just consists of a script. It is not a .exe file.
+            </p>
+        </article>
+      </section>
+      <section class="description">
+        <article>
+          <h1>Features</h1>
+          <p class="paragraph-1">
+            This program does one thing: It finds the path from entrance to the exit in python.
+            In the script there is a section where you can change the maze. Once you have changed the maze, you can run the script and watch go.
+            If there is no path, it won't display the path, unlike in the following image:
+          </p>
+          <p class="paragraph-2">
+            Instead, the "traveller" won't move at all. The console will display an empty list instead of a list of instructions leading you to the exit aswell.
+          </p>
+          <div class="image-flex">
+            <figure class="figure-2">
+              <img class="zoom-image" src="./images/notshowpath.png" alt="image of program not showing a path">
+              <figcaption>Image of program not showing a path</figcaption>
+            </figure>
+            <figure class="figure-1">
+              <img class="zoom-image" src="./images/showpath.png" alt="image of program showing a path">
+              <figcaption>Image of program showing a path</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+      <section class="explanation">
+        <article>
+          <h1>How this program does its thing</h1>
+          <p>
+            This program uses a recursive algorithm to solve the maze. There is a function that, traverses all the adjacent "squares" (top, bottom, left, right) 
+            and returns whether or not the adjacent squares are traversable (wall or not). If the square is traversable, the same function is called on that square.
+          </p>
+          <p>
+            At the end, once one instance of a function reaches the exit, it will return a value of True to the previous iteration and adds the correct instruction (direction to go) to
+            a list that contains all instructions. This process of returning True and adding to the list of instructions goes on until we have reached our first instance of the function and the
+            algorithm is finished.
+          </p>
+          <p>
+            But what if there is not solution? In that case, the first instance of this function should return False, as all instances that it has called should return False aswell.
+            That way, we know that this maze is impossible to escape and the value False and an empty list is displayed in the console.
+          </p>
+          <p>
+            In order to prevent the algorithm from traversing a square that has already been traversed and returning True, the script has a list that contains all traversed squares.
+          </p>
+          <p>
+            All in all, it is a very simple script and still does its job.
+            Sadly, there are a few limitations. If the exit "square" has two adjacent squares that are traversable, the program breaks for some reason. It is probably because two instances of the function start to return True and add their
+            instrctions to the list of instructions. So for now, be sure to not put the exit square in a place like that if you want it to work properly. I might fix it soon.
+          </p>
+        </article>
+      </section>
+      <section class="conclusion">
+        <article>
+          <h1>Conclusion</h1>
+          <p>
+            This script was created much more recently. (as of 09.05.2020) This time I used a class and I immediately realized how much more structured the program becomes once you use classes.
+            I could have made the structure better by adding an "if __name__ == "main": " statement but for now I will leave it.
+          </p>
+          <p>
+            I was surprised I took this little time to figure out a solution to this problem. It really showed me the power of recursive functions.
+            I also took a long time to actually get started on this script because I kept pushing it away, almost as if I was scared of it.
+            It taught me to go for something if you want to get it done and not to be scared of it just because the problem seems very complex at first.
+          </p>
+        </article>
+      </section>
+      <section class="download">
+        <article>
+          <h1>Download</h1>
+          <p>
+            Since this is a python script, you will have to download the python language to be able to run it. Click <a href="">here</a> to get to the Python page.
+            Be sure to download the latest version, not version 2.x because it might not work otherwise.
+          </p>
+          <p>
+            In order to run it you can extract the zip file and right click on the script and click on "Edit with IDLE". Then you can press F5 and see the solution for yourself.
+          </p>
+          <div data-scroll><div class="download-svg"></div><a href="./files/maze_algorithm.py" download>version 1.0</a></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Website by Rui Zhang</p>
+      <div class="social-media">
+        <div class="Youtube" onclick="window.location.href = 'https://www.youtube.com/channel/UCrY2gIg_7vrlKUp9Cim6LBA'"></div>
+        <div class="Instagram" onclick="window.location.href = 'https://www.instagram.com/totallyinformatik/'"></div>
+        <div class="Twitter" onclick="window.location.href = 'https://twitter.com/totallyInforma1'"></div>
+        <div class="Tumblr" onclick="window.location.href = 'https://www.tumblr.com/blog/totallyinformatik'"></div>
+      </div>
+    </footer>
+  </body>
+
+  <div class="dark-mode-wrapper">
+    <div class="dark-mode-button">
+    </div>
+  </div>
+  
+  <div class="loader-screen">
+    <div class="loader">
+    </div>
+    <div class="loader2">
+    </div>
+  </div>
+</html>

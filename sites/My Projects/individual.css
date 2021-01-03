@@ -1,0 +1,235 @@
+body:after {
+  content: url("./../../images/darkmode-heros/hero-image5.jpg"), url("./../../images/lightmode-heros/hero-image5.jpg"), url("./ProjectSites/Moodle-Calendar/images/Kalender1_1.png"), url("./../../images/MazeAlgorithm.png"), url("./../../images/Einrad.jpg"), url("./../../images/TicTacToeAi.png"), url("./../../images/DungeonRaiders.png");
+  display: none;
+}
+
+.hero-section {
+  background-image: url("./../../images/lightmode-heros/hero-image5.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.hero-section.dark-mode {
+  background-image: url("./../../images/darkmode-heros/hero-image5.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.project-gallery {
+  padding: 0;
+  width: 100%;
+}
+
+.project-gallery .project-items-wrapper {
+  width: 100vw;
+}
+
+.project-gallery .project-items-wrapper .project-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0vw;
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+}
+
+.project-gallery .project-gallery-header {
+  -webkit-transition: background-color 0s linear;
+  transition: background-color 0s linear;
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.project-gallery .project-gallery-header .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.project-gallery .project-gallery-header nav {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.project-gallery .project-gallery-header nav .project-gallery-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.project-gallery .project-gallery-header nav .project-gallery-nav-links .project-gallery-nav-link {
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: bottom 0.5s ease;
+  transition: bottom 0.5s ease;
+  bottom: 0;
+}
+
+.project-gallery .project-gallery-header nav .project-gallery-nav-links .project-gallery-nav-link:hover {
+  bottom: 5px;
+}
+
+.project-gallery .project-gallery-header nav .project-gallery-nav-links .project-gallery-nav-link .link-item {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/*
+@media screen and (max-width: 700px) {
+    .project-gallery .project-items-wrapper .project-items {
+        display: block;
+    }
+}
+*/
+.project-gallery.dark-mode nav.dark-mode a.dark-mode {
+  color: white;
+}
+
+.project-gallery.dark-mode nav.dark-mode a.dark-mode:visited {
+  color: white;
+}
+
+.project-gallery.dark-mode nav.dark-mode .link-item.dark-mode {
+  background-color: white;
+}
+
+@media screen and (min-width: 1100px) {
+  .project-gallery-header .link-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .project-gallery-header .link-item {
+    display: block;
+  }
+  .project-gallery-header .link-text {
+    display: none;
+  }
+}
+
+.project-gallery.dark-mode .project-gallery-header.dark-mode {
+  background-color: #282828;
+}
+
+.project-item {
+  height: 100vh;
+  display: inline-table;
+}
+
+.project-item .project-content-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.project-section {
+  background-color: whitesmoke;
+  width: 75vw;
+  margin: 0 12.5% 0 12.5%;
+  padding: 30px 100px;
+}
+
+.project-section.dark-mode {
+  background-color: #323232;
+}
+
+.project-hero {
+  width: 100vw;
+  height: 50vh;
+  min-height: 300px;
+  background-color: white;
+  padding: 0 0 0 0;
+}
+
+.project-hero article {
+  cursor: pointer;
+  margin-left: 12.5%;
+  width: 75%;
+  height: 100%;
+  display: inline-table;
+}
+
+.project-hero article h2 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+}
+
+@media screen and (max-width: 620px) {
+  .project-section {
+    padding: 30px 30px;
+    margin: 0 0 10vh 0;
+    width: 100vw;
+  }
+  .project-hero article {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.dungeon-game-hero article {
+  background-image: url("./ProjectSites/Turtle Module Game/images/DungeonRaiders.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.Tic-Tac-Toe-AI-hero article {
+  background-image: url("./ProjectSites/Tic Tac Toe/images/tictactoe-hero-darkmode.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.einrad-hero article {
+  background-image: url("./../../images/Einrad.jpg");
+  background-position: center 10%;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.maze-algo-hero article {
+  background-image: url("./ProjectSites/Maze Algorithm/images/MazeAlgorithm.png");
+  background-position: center 10%;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.Moodle-Project-hero article {
+  background-image: url("./ProjectSites/Moodle-Calendar/images/Kalender1_1.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+
+.Planify-Project-hero article {
+  background-image: url("./../../images/Planify.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+}
+/*# sourceMappingURL=individual.css.map */

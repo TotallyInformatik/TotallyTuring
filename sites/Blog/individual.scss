@@ -1,0 +1,62 @@
+@import "./../../css/reusables.scss";
+
+body:after {
+    content: url("./../../images/lightmode-heros/hero-image.jpg"), url("./../../images/April.jpg"), url("./../../images/darkmode-heros/hero-image.jpg");
+    display: none;
+}
+
+.hero-section {
+    @include backgroundImage(url("./../../images/lightmode-heros/hero-image.jpg"), center, 100%, static, cover);
+}
+.hero-section.dark-mode {
+    @include backgroundImage(url("./../../images/darkmode-heros/hero-image.jpg"), center, 100%, static, cover);
+}
+
+@keyframes detailsAnimation {
+    from {height: 0}
+    to {height: 100%}
+}
+
+.introduction {
+    text-align: justify;
+    .details-element {
+        cursor: pointer;
+        .summary-element h2:hover {
+            color: grey;
+        }
+        .summary-element h2, .summary-element .chevron-right {
+            display: inline-block;
+        }
+        .details {
+            overflow: hidden;
+        }
+    }
+}
+
+// blogs:
+
+.post-hero {
+    width: 100vw;
+    height: 60vh;
+    min-height: 300px;
+    color: black;
+    padding: 0;
+    margin: 10vh 0;
+    article {
+        height: 100%;
+        width: 75%;
+        margin-left: 12.5%;
+        text-align: center;
+        @include backgroundImage(url("./../../images/April.jpg"), 50%, 35%, static, cover);
+        display: inline-table;
+        .text {
+            display: table-cell;
+            vertical-align: middle;
+            color: black;
+        }
+    }
+}
+.Janurary, .April {
+    z-index: 1;
+    text-align: justify;
+}

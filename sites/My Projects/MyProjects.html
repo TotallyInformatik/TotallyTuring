@@ -1,0 +1,243 @@
+<!-- TODO finisch the documentation on all other programs! -->
+<!-- Deadline for this Website's Update: next week! -->
+
+<!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>My Projects</title>
+    <link rel="icon" href="./../../images/TT.jpg">
+
+    <!-- CSS -->
+    <link href="./../../css/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="./individual.css" rel="stylesheet" type="text/css">
+    <link href="./../../css/animations.css" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="./../../js/loader.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./../../js/hero-image.js" type="text/javascript"></script>
+    <script src="./../../js/scroll-out-setup.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.5
+        });
+        registerSvgPath("./../../svgs/");
+      });
+    </script>
+    <script src="./../../js/dark-mode.js" type="text/javascript"></script>
+    <script src="./project-gallery.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header class="main-header">
+      <h2 class="logo" data-no-scroll><a href="./../../index.html">TT</a></h2>
+      <nav>
+        <ul class="nav-links" data-no-scroll>
+          <li class="nav-link" data-no-scroll><a href="./../../index.html">Home</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../About/About.html">About</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../Blog/Blog.html">Blog</a></li>
+          <li class="nav-link-chosen" data-no-scroll><a>My Projects</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../notAvailable.html">Tutorials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <article class="hero-article">
+          <h1>My Projects</h1>
+        </article>
+        <div class="scroll-indicator">
+        </div>
+      </section>
+      <section class="project-gallery">
+        <header class="project-gallery-header">
+          <h3 class="logo">Projects:</h3>
+          <nav>
+            <ul class="project-gallery-nav-links">
+              <li class="project-gallery-nav-link" data-project-index="0" data-no-scroll>
+                <p class="link-text">Dungeon Raiders</p>
+                <div class="link-item"></div>
+              </li>
+              <li class="project-gallery-nav-link" data-project-index="1" data-no-scroll>
+                <p class="link-text">TicTacToe algo</p>
+                <div class="link-item"></div>
+              </li>
+              <li class="project-gallery-nav-link" data-project-index="2" data-no-scroll>
+                <p class="link-text">Fahrrad Minus 1</p>
+                <div class="link-item"></div>
+              </li>
+              <li class="project-gallery-nav-link" data-project-index="3" data-no-scroll>
+                <p class="link-text">Maze Algorithm</p>
+                <div class="link-item"></div>
+              </li>
+              <li class="project-gallery-nav-link" data-project-index="4" data-no-scroll>
+                <p class="link-text">Moodle-Calendar</p>
+                <div class="link-item"></div>
+              </li>
+              <li class="project-gallery-nav-link" data-project-index="5" data-no-scroll>
+                <p class="link-text">Planify</p>
+                <div class="link-item"></div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="introduction">
+          <article>
+            <p>
+              On this site, I will list programs / websites etc. I have created. You can click on the individual items on the header (PC) or swipe (PC / mobile) to reveal a sort of card that displays a picture and some information to that project
+              click on the images that pop up to get to a site that gives you more insight on how everything works and where you can
+              download the program. When downloading, your antivirus program will probably go crazy, but I assure you that I have not intentionaly put any viruses etc. in these programs, you can check the code if you want.
+            </p>
+            <p>
+              By the way, here are some instructions on how to use the programs:
+            </p>
+            <p>
+              Once you download the file, extract the contents of the zip file by right clicking on the zip file and on "extract all". Then you can view the contents and start the exe file.
+              If you want the exe file to be located on your desktop, you can right click on the exe file and click on create shortcut. Then you can drag the shortcut that just popped up and use that.
+            </p>
+          </article>
+        </section>
+        <main class="project-items-wrapper">
+          <div class="project-items">
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <section class="dungeon-game-hero project-hero">
+                  <article onclick="window.location.href='./ProjectSites/Turtle Module Game/FirstGame.html'">
+                    <h2 class="color-ignore" data-no-scroll>Dungeon Raiders (2018)</h2>
+                  </article>
+                </section>
+                <section class="dungeon-game-section project-section">
+                  <article>
+                    <p data-no-scroll>
+                      This is the first game that I created. I didn't really finish this project. After a while, I found out how to program games with an engine, so I moved on to do that.
+                      I created this game when I was 12 or 13, so there will be some stupid unfunny jokes in this game...
+                    </p>
+                  </article>
+                </section>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <section class="Tic-Tac-Toe-AI-hero project-hero">
+                  <article onclick="window.location.href='./ProjectSites/Tic Tac Toe/TicTacToe.html'">
+                    <h2 class="color-ignore" data-no-scroll>Tic-Tac-Toe algorithm (2019)</h2>
+                  </article>
+                </section>
+                <section class="Tic-Tac-Toe-AI-section project-section">
+                  <article>
+                    <p data-no-scroll>
+                      This Tic-Tac-Toe AI can most likely beat you at this game or at least get a tie. It is not perfect though. The trick is to do something very stupid instead of smart.
+                      Then the program gets confused and you can win....
+                    </p>
+                    <p data-no-scroll>
+                      Ok, I'll be honest, when I programmed this program back in 2018, I thought this program was unbeatable. Obviously it is not. I am currently thinking of making a better version of this AI.
+                      Maybe one day I will make it better and truly unbeatable.
+                    </p>
+                  </article>
+                </section>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <section class="einrad-hero project-hero">
+                  <article onclick="window.location.href='http://ruined.bplaced.net/'">
+                    <h2 class="color-ignore" data-no-scroll>Fahrrad Minus 1 (from 2019)</h2>
+                  </article>
+                </section>
+                <section class="einrad-section project-section">
+                  <article>
+                    <p data-no-scroll>
+                      This is the finished product for a school project. On this site, I talk about one of
+                      my rather quirky hobbies, that is riding the unicycle. I go into detail about 
+                      tricks and explain generally what you can do with it. Again, this is a German website, hence the weird name.
+                      "Fahrrad" is the German equivalent to Bicycle, and if you think about the name enough, you'll get the joke.
+                    </p>
+                  </article>
+                </section>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <section class="maze-algo-hero project-hero">
+                  <article onclick="window.location.href='./ProjectSites/Maze Algorithm/MazeAlgorithm.html'">
+                    <h2 class="color-ignore" data-no-scroll>Maze Algorithm</h2>
+                  </article>
+                </section>
+                <section class="maze-algo-section project-section">
+                  <article>
+                    <p data-no-scroll>
+                      This script finds the path from the entrance to the exit in a maze. It uses recursive programming and displays the path from the entrance to the exit in a window using the turtle module.
+                    </p>
+                  </article>
+                </section>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <section class="Moodle-Project-hero project-hero">
+                  <article onclick="window.location.href='./ProjectSites/Moodle-Calendar/MoodleCalendar.html'">
+                    <h2 class="color-ignore" data-no-scroll>Moodle-Calendar (from March-April 2020)</h2>
+                  </article>
+                </section>
+                <section class="Moodle-Project-section project-section">
+                  <article>
+                    <p data-no-scroll>
+                      This Program is made in python with various modules such as tkinter, datetime, BeatifulSoup4 etc. It is a calendar where you can plan your day and see the
+                      tasks from Moodle, but unlike the calendar that the known Website Moodle which serves for online education already provides, this calendar only shows the tasks that are relevant (i.e.
+                      no tasks will be displayed that you have already submitted, no tasks that were due some time ago, etc.), that way, you can plan your day more easily. For more Information, click on the image!
+                    </p>
+                  </article>
+                </section>
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <section class="Planify-Project-hero project-hero">
+                  <article onclick="window.location.href='https://totallyinformatik.github.io/PlanifySite/'">
+                    <h2 class="color-ignore" data-no-scroll>Planify (2020/2021)</h2>
+                  </article>
+                </section>
+                <section class="Planify-Project-section project-section">
+                  <article>
+                    <p data-no-scroll>
+                      A planning application made with electron. Designed to be beautiful and intuitive. Download on this website. Took a literal year to make due to school....
+                    </p>
+                  </article>
+                </section>
+              </div>
+            </div>
+          </div>
+        </main>
+      </section>
+    </main>
+    <footer>
+      <p>Website by Rui Zhang</p>
+      <div class="social-media">
+        <div class="Youtube" onclick="window.location.href = 'https://www.youtube.com/channel/UCrY2gIg_7vrlKUp9Cim6LBA'"></div>
+        <div class="Instagram" onclick="window.location.href = 'https://www.instagram.com/totallyinformatik/'"></div>
+        <div class="Twitter" onclick="window.location.href = 'https://twitter.com/totallyInforma1'"></div>
+        <div class="Tumblr" onclick="window.location.href = 'https://www.tumblr.com/blog/totallyinformatik'"></div>
+      </div>
+    </footer>
+  </body>
+
+  <div class="dark-mode-wrapper">
+    <div class="dark-mode-button">
+    </div>
+  </div>
+
+  <div class="loader-screen">
+    <div class="loader">
+    </div>
+    <div class="loader2">
+    </div>
+  </div>
+</html>

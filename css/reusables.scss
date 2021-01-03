@@ -1,0 +1,19 @@
+// gradients:
+
+
+// mixins:
+
+@mixin backgroundImage($imageUrl, $xPos, $yPos, $attachment, $size) {
+  background-image: $imageUrl;
+  background-position: $xPos $yPos;
+  background-size: $size;
+  background-attachment: $attachment;
+}
+
+@mixin svgCostumize($svgUrl, $width, $height) {
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: $svgUrl;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About TT</title>
+    <link rel="icon" href="./../../images/TT.jpg">
+
+    <!-- CSS -->
+    <link href="./../../css/mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="./individual.css" rel="stylesheet" type="text/css">
+    <link href="./../../css/animations.css" rel="stylesheet" type="text/css">
+
+    <!-- Javascript -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./../../js/loader.js" type="text/javascript"></script>
+    <script src="./Kontakt.js" type="text/javascript"></script>
+    <script src="./../../js/hero-image.js" type="text/javascript"></script>
+    <script src="./../../js/scroll-out-setup.js" type="text/javascript"></script>
+    <script src="./../../js/image-zoom.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        ScrollOut({
+          threshold: 0.5
+        });
+        registerSvgPath("./../../svgs/");
+      });
+    </script>
+    <script src="./../../js/dark-mode.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header class="main-header">
+      <h2 class="logo" data-no-scroll><a href="./../../index.html">TT</a></h2>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link" data-no-scroll><a href="./../../index.html">Home</a></li>
+          <li class="nav-link-chosen" data-no-scroll><a>About</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../Blog/Blog.html">Blog</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../My Projects/MyProjects.html">My Projects</a></li>
+          <li class="nav-link" data-no-scroll><a href="./../notAvailable.html">Tutorials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <article class="hero-article">
+          <h1>About "TT" - TotallyTuring</h1>
+        </article>
+        <div class="scroll-indicator">
+        </div>
+      </section>
+      <section class="section1">
+        <article>
+          <p>
+            Hi reader, My name is Rui Zhang and I'm 14 years old.
+          </p>
+          <p>
+            In 2019, we learned HTML, CSS and JS - Webdevelopment, and honestly I had a blast! So I thought it would 
+            be a great idea to use the knowledge I have gathered on the Internet and at school to create a website with actual meaning.
+            This is how "TT" - TotallyTuring was born.
+          </p>
+          <div class="flex">
+            <div class="text">
+              <p>
+                I chose the name TotallyTuring, because Alan Turing was a renowned computer scientist and mathematician, among other things.
+                It should symbolize how I also want to become a computer scientist one day.
+                Some might find the name too arrogant, as it implies that I am tOtAlLy as smart as Alan Turing, 
+                but please keep in mind that it is still just sarcasm and no 14 year old can be as intelligent as Alan Turing was. (maybe a genius, but I don't believe that I am good enough to be called a genius)
+                The two T's also look like the symbol for PI, and indicates the close relationship between math, computer science and programming.
+              </p>
+              <p>
+                On this site, I will try to post my recent discoveries concerning programming and computer science as often as possible.
+                Since I am still in school, I won't have too much time for programming, because there are lots of other subjects that
+                I have to study for too. Regardless, I will try my best to take most of my free time to improve my coding skills.
+              </p>
+            </div>
+            <br>
+            <img class="zoom-image" src="./../../images/books.jpg" alt="Code">
+          </div>
+        </article>
+      </section>
+      <section class="section2-hero">
+        <article>
+          <h1 class="secondary-hero" >Feedback</h1>
+        </article>
+      </section>
+      <section class="section2">
+        <article>
+          <p>
+            If you have any feedback on how I can improve this website or my programming skills, 
+            then feel free to send me an e-mail. You can also ask questions about programming as a hobby or school subject.
+          </p>
+          <p>
+            Honestly, you can write me anything you want, I'll be happy no matter what.
+          </p>
+          <form method="POST" name="kontakt" class="kontakt-form">
+            <div class="name" data-scroll>Your name: <br><input type="text" name="name" class="nameInput" required></div>
+            <div class="email" data-scroll>Your e-mail address: <br><input type="email" name="email" class="emailInput" required></div>
+            <div class="nummer" data-scroll>Subject: <br><input type="text" name="subject" class="subjectInput" required></div>
+            <div class="message" data-scroll>Your message: <br><textarea name="message" class="messageInput" required></textarea></div>
+            <div class="submit" data-scroll><input type="submit" name="submit" value="enter"></div>
+          </form>
+          <div class="feedback-message">
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Website by Rui Zhang</p>
+      <div class="social-media">
+        <div class="Youtube" onclick="window.location.href = 'https://www.youtube.com/channel/UCrY2gIg_7vrlKUp9Cim6LBA'"></div>
+        <div class="Instagram" onclick="window.location.href = 'https://www.instagram.com/totallyinformatik/'"></div>
+        <div class="Twitter" onclick="window.location.href = 'https://twitter.com/totallyInforma1'"></div>
+        <div class="Tumblr" onclick="window.location.href = 'https://www.tumblr.com/blog/totallyinformatik'"></div>
+      </div>
+    </footer>
+  </body>
+
+  <div class="dark-mode-wrapper">
+    <div class="dark-mode-button">
+    </div>
+  </div>
+
+  <div class="loader-screen">
+    <div class="loader">
+    </div>
+    <div class="loader2">
+    </div>
+  </div>
+</html>

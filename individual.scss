@@ -1,0 +1,88 @@
+@import './css/reusables.scss';
+
+body:after {
+  content: url("./images/lightmode-heros/hero-image1.jpg"), url("./images/RuiImg/IMG_20200412_205034-min.jpg"), url("./images/darkmode-heros/hero-image1.jpg");
+  display: none;
+}
+
+.hero-section {
+  @include backgroundImage(url("./images/lightmode-heros/hero-image1.jpg"), center, center, static, cover);
+}
+.hero-section.dark-mode {
+  @include backgroundImage(url("./images/darkmode-heros/hero-image1.jpg"), center, center, static, cover);
+}
+
+.introduction {
+  width: 100%;
+  height: 80vh;
+  min-height: 300px;
+  background-color: white;
+  z-index: 1;
+  padding: 10vh 0;
+  .introduction-item {
+    display: flex;
+    height: 100%;
+    width: 75%;
+    margin-left: 12.5%;
+    .text-container {
+      flex: 2;
+      background-color: whitesmoke;
+      padding: 30px;
+      text-align: justify;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .text {
+        height: 100%;
+        width: 100%;
+        h2 {
+          display: inline-block;
+        }
+      }
+    }
+    .img {
+      flex: 1;
+      height: 100%;
+      width: 33.3%;
+      background-color: whitesmoke;
+      @include backgroundImage(url("./images/RuiImg/IMG_20200412_205034-min.jpg"), center, 3%, static, cover);
+      background-repeat: no-repeat;
+    }
+  }
+}
+.introduction.dark-mode {
+  background-color: rgb(30, 30, 30);
+  .introduction-item.dark-mode {
+    .text-container.dark-mode {
+      background-color: rgb(50, 50, 50);
+    }
+    .img.dark-mode {
+      background-color: rgb(30, 30, 30);
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .introduction { 
+    height: auto;
+    .introduction-item {
+      margin: 0;
+      width: 100%;
+      display: block;
+      .text-container {
+        padding: 50px;
+        height: auto;
+        .text {
+          overflow: hidden;
+        }
+      }
+      .img {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        margin-top: 10%;
+        @include backgroundImage(url("./images/RuiImg/IMG_20200412_205034-min.jpg"), center, 3%, static, contain)
+      }
+    }
+  }
+}

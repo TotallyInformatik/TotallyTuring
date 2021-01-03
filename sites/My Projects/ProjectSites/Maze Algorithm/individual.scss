@@ -1,0 +1,35 @@
+@import "./../../../../css/reusables.scss";
+
+body:after {
+    content: url("./images/MazeAlgorithmLightmode.png"), url("./images/MazeAlgorithmDarkmode.png"), url("./images/notshowpath.png"), url("./images/showpath.png");
+    display: none;
+}
+
+.hero-section {
+    @include backgroundImage(url("./images/MazeAlgorithmLightmode.png"), center, center, static, cover);
+}
+.hero-section.dark-mode {
+    @include backgroundImage(url("./images/MazeAlgorithmDarkmode.png"), center, center, static, cover);
+}
+
+.image-flex {
+    display: flex;
+    margin-top: 50px;
+    .figure-1, .figure-2 {
+        flex: 1;
+        width: 100%;
+        margin-right: 40px;
+        img {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .image-flex {
+        display: block;
+        .figure-1, .figure-2 {
+            margin: 50px 0 0 0;
+        }
+    }
+}
+
