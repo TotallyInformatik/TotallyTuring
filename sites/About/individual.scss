@@ -71,8 +71,7 @@ body:after {
     display: grid;
     grid-template-areas: 
       "name message message message"
-      "email message message message"
-      "nummer message message message"
+      "subject message message message"
       "submit message message message"
     ;
     height: 200px;
@@ -92,8 +91,8 @@ body:after {
     .email {
       grid-area: email;
     }
-    .nummer {
-      grid-area: nummer;
+    .subject {
+      grid-area: subject;
     }
     .submit {
       grid-area: submit;

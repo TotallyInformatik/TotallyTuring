@@ -18,16 +18,11 @@ body:after {
 }
 
 .images {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .images img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin-right: 10vh;
   -o-object-fit: contain;
      object-fit: contain;
@@ -41,5 +36,4 @@ body:after {
     width: 75%;
     margin: 10px 12.5%;
   }
-}
-/*# sourceMappingURL=individual.css.map */
+}/*# sourceMappingURL=individual.css.map */

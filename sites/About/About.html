@@ -23,6 +23,7 @@
     <script src="./../../js/hero-image.js" type="text/javascript"></script>
     <script src="./../../js/scroll-out-setup.js" type="text/javascript"></script>
     <script src="./../../js/image-zoom.js" type="text/javascript"></script>
+    <script src="./../../js/age-set.js" type="text/javascript"></script>
     <script>
       $(function() {
         ScrollOut({
@@ -58,7 +59,7 @@
       <section class="section1">
         <article>
           <p>
-            Hi reader, My name is Rui Zhang and I'm 14 years old.
+            Hi reader, My name is Rui Zhang and I'm <span class="age"></span> years old.
           </p>
           <p>
             In 2019, we learned HTML, CSS and JS - Webdevelopment, and honestly I had a blast! So I thought it would 
@@ -71,7 +72,7 @@
                 I chose the name TotallyTuring, because Alan Turing was a renowned computer scientist and mathematician, among other things.
                 It should symbolize how I also want to become a computer scientist one day.
                 Some might find the name too arrogant, as it implies that I am tOtAlLy as smart as Alan Turing, 
-                but please keep in mind that it is still just sarcasm and no 14 year old can be as intelligent as Alan Turing was. (maybe a genius, but I don't believe that I am good enough to be called a genius)
+                but please keep in mind that it is still just sarcasm and no <span class="age"></span> year old can be as intelligent as Alan Turing was. (maybe a genius, but I don't believe that I am good enough to be called a genius)
                 The two T's also look like the symbol for PI, and indicates the close relationship between math, computer science and programming.
               </p>
               <p>
@@ -101,13 +102,10 @@
           </p>
           <form method="POST" name="kontakt" class="kontakt-form">
             <div class="name" data-scroll>Your name: <br><input type="text" name="name" class="nameInput" required></div>
-            <div class="email" data-scroll>Your e-mail address: <br><input type="email" name="email" class="emailInput" required></div>
-            <div class="nummer" data-scroll>Subject: <br><input type="text" name="subject" class="subjectInput" required></div>
-            <div class="message" data-scroll>Your message: <br><textarea name="message" class="messageInput" required></textarea></div>
+            <div class="subject" data-scroll>Subject: <br><input type="text" name="subject" class="subjectInput" required></div>
+            <div class="message" data-scroll>Your message: <br><textarea name="message" class="messageInput" wrap="hard" required></textarea></div>
             <div class="submit" data-scroll><input type="submit" name="submit" value="enter"></div>
           </form>
-          <div class="feedback-message">
-          </div>
         </article>
       </section>
     </main>

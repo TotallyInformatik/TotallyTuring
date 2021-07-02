@@ -34,23 +34,18 @@ body:after {
     height: 100%;
   }
 }
-
 .introduction {
   text-align: justify;
 }
-
 .introduction .details-element {
   cursor: pointer;
 }
-
 .introduction .details-element .summary-element h2:hover {
   color: grey;
 }
-
 .introduction .details-element .summary-element h2, .introduction .details-element .summary-element .chevron-right {
   display: inline-block;
 }
-
 .introduction .details-element .details {
   overflow: hidden;
 }
@@ -63,7 +58,6 @@ body:after {
   padding: 0;
   margin: 10vh 0;
 }
-
 .post-hero article {
   height: 100%;
   width: 75%;
@@ -75,7 +69,6 @@ body:after {
   background-attachment: static;
   display: inline-table;
 }
-
 .post-hero article .text {
   display: table-cell;
   vertical-align: middle;
@@ -85,5 +78,4 @@ body:after {
 .Janurary, .April {
   z-index: 1;
   text-align: justify;
-}
-/*# sourceMappingURL=individual.css.map */
+}/*# sourceMappingURL=individual.css.map */
