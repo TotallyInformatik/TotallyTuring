@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "reusables.scss"
-    ],
-    "names": [],
-    "file": "reusables.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"reusables.css"}
