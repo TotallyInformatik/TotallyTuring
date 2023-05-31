@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:wght@600;700&display=swap");
+@font-face {
+  font-family: "Poppins";
+  src: url("./../fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("./../fonts/Manrope/Manrope-VariableFont_wght.ttf");
+}
 * {
   box-sizing: border-box;
 }
@@ -71,7 +78,7 @@ section {
 }
 
 section.dark-mode {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
 }
 
 @media screen and (max-width: 700px) {
@@ -182,8 +189,7 @@ figure {
   position: absolute;
   bottom: 20px;
   right: calc(50vw - 50px);
-  -webkit-animation: scrollIndicatorAnim 1s ease infinite;
-          animation: scrollIndicatorAnim 1s ease infinite;
+  animation: scrollIndicatorAnim 1s ease infinite;
 }
 .hero-section .scroll-indicator.dark-mode {
   background-image: url("./../svgs/darkmode/expand_more-24px.svg");
@@ -272,7 +278,7 @@ footer .social-media .Tumblr.dark-mode {
 }
 
 footer.dark-mode {
-  background-color: #323232;
+  background-color: rgb(50, 50, 50);
 }
 
 .loader-screen {
@@ -288,37 +294,35 @@ footer.dark-mode {
 .loader-screen .loader {
   width: 10px;
   height: 10px;
-  background-color: #c8c8c8;
+  background-color: rgb(200, 200, 200);
   position: relative;
   top: 50%;
   left: 50%;
   margin-top: -5px;
   margin-left: -5px;
-  -webkit-animation: loaderAnim 2s ease-in-out infinite;
-          animation: loaderAnim 2s ease-in-out infinite;
+  animation: loaderAnim 2s ease-in-out infinite;
 }
 .loader-screen .loader2 {
   width: 10px;
   height: 10px;
-  background-color: #c8c8c8;
+  background-color: rgb(200, 200, 200);
   position: relative;
   top: 50%;
   left: 50%;
   margin-top: -5px;
   margin-left: -5px;
   transform: rotate(90deg);
-  -webkit-animation: loader2Anim 2s ease-in-out infinite;
-          animation: loader2Anim 2s ease-in-out infinite;
+  animation: loader2Anim 2s ease-in-out infinite;
 }
 
 .loader-screen.dark-mode {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
 }
 .loader-screen.dark-mode .loader {
-  background-color: #3c3c3c;
+  background-color: rgb(60, 60, 60);
 }
 .loader-screen.dark-mode .loader2 {
-  background-color: #3c3c3c;
+  background-color: rgb(60, 60, 60);
 }
 
 .dark-mode-wrapper {

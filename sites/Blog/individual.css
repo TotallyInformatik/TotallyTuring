@@ -17,15 +17,6 @@ body:after {
   background-attachment: static;
 }
 
-@-webkit-keyframes detailsAnimation {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
-
 @keyframes detailsAnimation {
   from {
     height: 0;

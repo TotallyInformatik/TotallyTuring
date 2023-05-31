@@ -89,8 +89,8 @@ body:after {
   background-color: whitesmoke;
 }
 .section2 .kontakt-form input.dark-mode, .section2 .kontakt-form textarea.dark-mode {
-  border-color: #323232;
-  background-color: #323232;
+  border-color: rgb(50, 50, 50);
+  background-color: rgb(50, 50, 50);
 }
 .section2 .kontakt-form .name {
   grid-area: name;

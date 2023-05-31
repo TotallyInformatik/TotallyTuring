@@ -61,13 +61,13 @@ body:after {
 }
 
 .introduction.dark-mode {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
 }
 .introduction.dark-mode .introduction-item.dark-mode .text-container.dark-mode {
-  background-color: #323232;
+  background-color: rgb(50, 50, 50);
 }
 .introduction.dark-mode .introduction-item.dark-mode .img.dark-mode {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
 }
 
 @media screen and (max-width: 1000px) {

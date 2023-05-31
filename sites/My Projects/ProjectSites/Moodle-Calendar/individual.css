@@ -72,10 +72,10 @@ body:after {
 }
 
 .description.dark-mode {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
 }
 .description.dark-mode .versions.dark-mode {
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
 }
 
 @media screen and (max-width: 1500px) {

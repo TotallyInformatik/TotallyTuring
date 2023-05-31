@@ -1,5 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:wght@600;700&display=swap');
 @import "./../css/reusables.scss";
+
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./../fonts/Manrope/Manrope-VariableFont_wght.ttf");
+}
+
 
 * {
   box-sizing: border-box;
